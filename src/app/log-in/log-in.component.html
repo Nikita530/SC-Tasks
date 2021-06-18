@@ -7,8 +7,11 @@
       </h1>
       <p class="logo-text-copyrighter">Softclub Edition</p>
     </div>
+  </div>
+</header>
+<main>
+  <div class="wrapper">
     <p class="add-player-text">Add a new player to start the game</p>
-
     <form [formGroup]="form"  (submit)="onSubmit()">
       <label for="text">User Name</label>
       <input type="text" formControlName="username">
@@ -16,14 +19,18 @@
       <input type="text" formControlName="email">
       <button type="submit" class="btn">Add</button>
     </form>
-  
     <ul>
       <li *ngFor="let a of users">
         <h5 style="margin: 0"></h5>
       </li>
     </ul>
   </div>
-</header>
+</main>
+ 
+
+  
+    
+
 
 
 
