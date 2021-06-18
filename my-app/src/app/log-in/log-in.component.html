@@ -1,0 +1,29 @@
+<header>
+  <div class="wrapper">
+    <div class="logo-text">
+      <h1>
+        count your <br>
+        <span class="logo-text-big">points</span><br>
+      </h1>
+      <p class="logo-text-copyrighter">Softclub Edition</p>
+    </div>
+    <p class="add-player-text">Add a new player to start the game</p>
+
+    <form [formGroup]="form"  (submit)="onSubmit()">
+      <label for="text">User Name</label>
+      <input type="text" formControlName="username">
+      <label for="text">Email</label>
+      <input type="text" formControlName="email">
+      <button type="submit" class="btn">Add</button>
+    </form>
+  
+    <ul>
+      <li *ngFor="let a of users">
+        <h5 style="margin: 0"></h5>
+      </li>
+    </ul>
+  </div>
+</header>
+
+
+
