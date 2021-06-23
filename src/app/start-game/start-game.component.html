@@ -1,0 +1,44 @@
+<header>
+  <div class="wrapper">
+    <div class="logo-text">
+      <h1>
+        count your <br />
+        <span class="logo-text-big">points</span><br />
+      </h1>
+      <p class="logo-text-copyrighter">©Softclub Edition</p>
+    </div>
+  </div>
+</header>
+<section>
+  <div class="wrapper">
+    <p class="text-sel-pl">
+      Select players
+    </p>
+    <div class="common">
+      <input type="text" placeholder="Search">
+      <button routerLink="/add-player">New player</button>
+    </div>
+    
+    <div class="list-players" *ngFor="let user of users; let i = index">
+      <div class="player">
+        <p class="username">{{ user.username }}</p>
+        <p class="email">{{ user.email }}</p>
+        <button (click)="removePlayer(i)">Удалить</button>
+      </div>
+        
+    </div>
+  </div>
+</section>
+<section>
+  <p>
+    Choose game
+  </p>
+  <div class="type-game">
+    <h2>501</h2>
+    <h2>301</h2>
+  </div>
+  <button>
+    start game
+  </button>
+</section>
+
