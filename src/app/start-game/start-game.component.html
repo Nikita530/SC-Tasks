@@ -22,23 +22,29 @@
     <div class="list-players" *ngFor="let user of users; let i = index">
       <div class="player">
         <p class="username">{{ user.username }}</p>
+
         <p class="email">{{ user.email }}</p>
-        <button (click)="removePlayer(i)">Удалить</button>
+        <img src="../../assets/images/delete.png" (click)="removePlayer(i)"  alt="del">
       </div>
         
     </div>
   </div>
 </section>
-<section>
-  <p>
-    Choose game
-  </p>
-  <div class="type-game">
-    <h2>501</h2>
-    <h2>301</h2>
+<section class="type-game">
+  <div class="wrapper">
+    <div class="common-type-game">
+      <p>
+        Choose game
+      </p>
+      <div class="games">
+        <a class="type-game-link">501</a>
+        <a class="type-game-link">301</a>
+      </div>
+    </div>
+    
+    <button class="start-btn">
+      start game
+    </button>
   </div>
-  <button>
-    start game
-  </button>
 </section>
 

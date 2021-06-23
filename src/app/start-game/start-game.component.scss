@@ -4,7 +4,7 @@ header{
     margin-left: -70rem;
 }
 .wrapper{
-    width: 57%;
+    width: 90%;
     margin: 0 auto;
     text-align: center;
 }
@@ -43,15 +43,18 @@ header{
     input{
         margin-right: 3rem;
         border-color: white;
-        width: 15rem;
-        height: 30px;
+        width: 50%;
+        height: 46px;
+        font-size: 25px;
+        padding-left: 10px;
         border-radius: 0.3rem;
     }
     button{
         background-color:rgba(255, 217, 0, 0.856);
         border-color: rgba(255, 217, 0, 0.856);
-        width: 15rem;
-        height: 35px;
+        width: 50%;
+        height: 55px;
+        font-size: 25px;
         border-radius: 0.3rem;
     }
 }
@@ -64,12 +67,62 @@ header{
     margin-top: 15px;
 }
 .player{
+    display: flex;
+    justify-content: space-between;
     background-color: white;
     margin-bottom: 5px;
+    color: grey;
+    border-radius:0.5rem;
     .username{
-        text-align: left;
+        font-size: 25px;
+        margin-left: 2rem;
     }
     .email{
-        text-align: right;
+        font-size: 25px;
+        margin-right: -14rem;
     }
+    img{
+        width: 2rem;
+        height: 2rem;
+        padding-top: 25px;
+        padding-right: 10px;
+    }
+}
+.type-game{
+    .common-type-game{
+        display: flex;
+        flex-direction: column;
+        margin-left: 17rem;
+        .games{
+            display: flex;
+
+        }
+        
+        p{
+            color:white;
+            font-size: 25px;
+            text-align: left;
+        }
+        .type-game-link{
+            border-color: white;
+            background-color: white;
+            border-radius: 45px;
+            padding: 1.8rem;
+            font-size: 25px;
+            margin-right: 2rem;
+            text-decoration: none;
+        }
+        
+    }
+    .start-btn{
+        margin-top: 5rem;
+        color: white;
+        font-size: 25px;
+        border-color: rgba(47, 199, 47, 0.63);
+        padding: 1rem 16rem;
+        background-color: rgba(47, 199, 47, 0.63);
+    }
+
+    
+
 }
