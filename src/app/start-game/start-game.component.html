@@ -17,23 +17,21 @@
     <div class="common">
       <input type="text" placeholder="Search">
       <button routerLink="/add-player">New player</button>
-    </div>
-    
+    </div> 
     <div class="list-players" *ngFor="let user of users; let i = index">
       <div class="player">
         <p class="username">{{ user.username }}</p>
 
         <p class="email">{{ user.email }}</p>
         <img src="../../assets/images/delete.png" (click)="removePlayer(i)"  alt="del">
-      </div>
-        
+      </div>  
     </div>
   </div>
 </section>
 <section class="type-game">
   <div class="wrapper">
     <div class="common-type-game">
-      <p >
+      <p>
         Choose game
       </p>
       <div class="games">
@@ -41,7 +39,6 @@
         <button class="type-game-link" (click)="sbToggle = !sbToggle" [class.type-game-link]="sbToggle" [class.type-game-link-active]="!sbToggle">301</button>
       </div>
     </div>
-    
     <button class="start-btn">
       start game
     </button>
