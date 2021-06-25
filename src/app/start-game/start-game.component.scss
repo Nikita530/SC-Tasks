@@ -33,6 +33,7 @@ header{
     font-family: 'Roboto', sans-serif;
     font-size: 20px;
     text-align: left;
+    margin-left: -25rem;
 }
 .common{
     display: flex;
@@ -40,6 +41,8 @@ header{
     width: 100%;
     margin: 0 auto;
     font-family: 'Roboto', sans-serif;
+    width: 60%;
+    margin: 0 auto;
     
     input{
         margin-right: 3rem;
@@ -94,9 +97,9 @@ header{
     .common-type-game{
         display: flex;
         flex-direction: column;
+        margin-left: 17rem;
         .games{
             display: flex;
-
         }
         
         p{
@@ -125,8 +128,6 @@ header{
             text-decoration: none;
             
         }
-
-    }
     .start-btn{
         margin-top: 5rem;
         color: white;
@@ -137,7 +138,6 @@ header{
         width: 100%;
         padding: 1rem;
     }
-
-    
+}
 
 }

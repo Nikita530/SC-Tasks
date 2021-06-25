@@ -18,6 +18,7 @@
       <input type="text" placeholder="Search">
       <button routerLink="/add-player">New player</button>
     </div> 
+  </div>
     <div class="list-players" *ngFor="let user of users; let i = index">
       <div class="player">
         <p class="username">{{ user.username }}</p>
@@ -25,6 +26,7 @@
         <p class="email">{{ user.email }}</p>
         <img src="../../assets/images/delete.png" (click)="removePlayer(i)"  alt="del">
       </div>  
+    </div>
     </div>
   </div>
 </section>
@@ -37,6 +39,10 @@
       <div class="games">
         <button class="type-game-link" (click)="fbToggle = !fbToggle" [class.type-game-link]="fbToggle" [class.type-game-link-active]="!fbToggle">501</button>
         <button class="type-game-link" (click)="sbToggle = !sbToggle" [class.type-game-link]="sbToggle" [class.type-game-link-active]="!sbToggle">301</button>
+      </div>
+    </div>
+        <a class="type-game-link">501</a>
+        <a class="type-game-link">301</a>
       </div>
     </div>
     <button class="start-btn">

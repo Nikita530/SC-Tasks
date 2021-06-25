@@ -8,8 +8,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class StartGameComponent implements OnInit {
   public user?: string;
+
   fbToggle: boolean = true;
   sbToggle: boolean = true;
+
 
   constructor(private playersService: PlayersService) {}
 
@@ -22,5 +24,4 @@ export class StartGameComponent implements OnInit {
   public removePlayer(index: number) {
     this.playersService.players.splice(index, 1);
   }
-  
 }
