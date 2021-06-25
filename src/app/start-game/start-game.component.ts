@@ -1,20 +1,26 @@
+import { PlayersService } from './../shared/players.service';
 import { Component, OnInit } from '@angular/core';
-import { PlayerService } from '../shared/player.service';
-
 
 @Component({
   selector: 'app-start-game',
   templateUrl: './start-game.component.html',
-  styleUrls: ['./start-game.component.scss']
+  styleUrls: ['./start-game.component.scss'],
 })
 export class StartGameComponent implements OnInit {
-  public players: any;
+  public user?: string;
+  fbToggle: boolean = true;
+  sbToggle: boolean = true;
 
-  constructor() {
-   }
+  constructor(private playersService: PlayersService) {}
 
-  ngOnInit(): void {
-    
+  ngOnInit(): void {}
+
+  public get users() {
+    return this.playersService.players;
   }
 
+  public removePlayer(index: number) {
+    this.playersService.players.splice(index, 1);
+  }
+  
 }
